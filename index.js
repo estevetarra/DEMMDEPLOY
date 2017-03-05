@@ -10,7 +10,7 @@ var planner = require('./planner');
 app.use(express.static('public'))
 
 //Client to server
-http.listen(3000, function () {
+http.listen(80, function () {
   console.log('Example app listening on port 3000!');
 });
 
@@ -100,7 +100,7 @@ function mainloop() {
     medicalAid["_0987654"] = {latitude: 41.394605, longitude: 2.150028};
     medicalAid["_0987653"] = {latitude: 41.405804,  longitude: 2.188877};
     medicalAid["_0987652"] = {latitude: 41.410492,  longitude: 2.158905};
-    
+
     var state ={"healers" : medicalAid,"injured": injured};
 
     //Call calculate routes function
